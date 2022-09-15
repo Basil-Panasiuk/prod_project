@@ -10,7 +10,7 @@ export const App = () => {
 	const {theme, toggleTheme} = useTheme();
 
   return (
-	<div className={classNames('app', {first: true, second: false, third: true}, [theme, 'dopFroArr'])}>
+	<div className={classNames('app', {}, [theme])}>
 		<button onClick={toggleTheme}>Toggle</button>
 		<Link to='/'>Main</Link>
 		<Link to='/about'>About</Link>
