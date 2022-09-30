@@ -4,6 +4,6 @@ export default function AboutPage() {
   const { t } = useTranslation('about');
 
   return (
-	<div>{t('AboutPage')}</div>
+	<div>{t('AboutPage')} {t('DUde')}</div>
   )
 }
