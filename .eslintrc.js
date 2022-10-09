@@ -21,4 +21,7 @@ module.exports = {
     'promise/param-names': 0,
     '@typescript-eslint/no-floating-promises': 0
   }
+  // global: {
+  //   '__IS_DEV': true,
+  // }
 };
