@@ -10,7 +10,7 @@ module.exports = {
     sourceType: 'module',
     project: ['tsconfig.json']
   },
-  plugins: ['react'],
+  plugins: ['react', 'i18next'],
   rules: {
     'react/react-in-jsx-scope': 0,
     '@typescript-eslint/strict-boolean-expressions': 0,
@@ -19,7 +19,8 @@ module.exports = {
     'react/jsx-props-no-spreading': 'warn',
     '@typescript-eslint/naming-convention': 0,
     'promise/param-names': 0,
-    '@typescript-eslint/no-floating-promises': 0
+    '@typescript-eslint/no-floating-promises': 0,
+    'i18next/no-literal-string': 2
   }
   // global: {
   //   '__IS_DEV': true,
