@@ -4,20 +4,20 @@ import { AppRouter } from './providers/router';
 import { Navbar } from 'widgets/Navbar/ui/Navbar';
 import './styles/index.scss';
 import { Sidebar } from 'widgets/Sidebar';
-import { Suspense } from 'react';
+import { FC, Suspense } from 'react';
 
-export const App = () => {
-	const { theme } = useTheme();
+export const App: FC = () => {
+  const { theme } = useTheme();
 
-	return (
-		<Suspense fallback="i18n loading....">
-			<div className={classNames('app', {}, [theme])}>
-				<Navbar />
-				<div className="content-page">
-					<Sidebar />
-					<AppRouter />
-				</div>
-			</div>
-		</Suspense>
-	)
-}
+  return (
+    <Suspense fallback="i18n loading....">
+      <div className={classNames('app', {}, [theme])}>
+        <Navbar />
+        <div className="content-page">
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </div>
+    </Suspense>
+  );
+};

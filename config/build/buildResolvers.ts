@@ -7,6 +7,6 @@ export const buildResolvers = (options: BuildOptions): ResolveOptions => {
     modules: [options.paths.src, 'node_modules'],
     preferAbsolute: true,
     mainFiles: ['index'],
-    alias: {}, //Homework: add @-alias
+    alias: {}, // Homework: add @-alias
   };
 };

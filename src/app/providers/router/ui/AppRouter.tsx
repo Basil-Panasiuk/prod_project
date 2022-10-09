@@ -1,8 +1,8 @@
-import { Suspense } from 'react'
+import { FC, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { routeConfig } from 'shared/config/routeConfig/routeConfig'
 
-export const AppRouter = () => {
+export const AppRouter: FC = () => {
   return (
 	<Suspense fallback={<div>Loading chunk...</div>}>
 		<div className="page-wrapper">
