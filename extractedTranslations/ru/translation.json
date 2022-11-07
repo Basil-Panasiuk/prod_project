@@ -1,9 +1,10 @@
 {
   "About": "About",
   "AboutPage": "AboutPage",
-  "DUde": "DUde",
-  "Hello": "Hello",
+  "Error": "Error",
   "Language": "Language",
   "Main": "Main",
-  "MainPage": "MainPage"
+  "MainPage": "MainPage",
+  "Page error": "Page error",
+  "toggle": "toggle"
 }

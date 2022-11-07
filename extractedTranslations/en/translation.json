@@ -1,10 +1,10 @@
 {
-  "": "",
-  "About": "",
-  "AboutPage": "",
-  "DUde": "",
-  "Hello": "Hello",
-  "Language": "",
-  "Main": "",
-  "MainPage": ""
+  "About": "About",
+  "AboutPage": "AboutPage",
+  "Error": "Error",
+  "Language": "Language",
+  "Main": "Main",
+  "MainPage": "MainPage",
+  "Page error": "Page error",
+  "toggle": "toggle"
 }

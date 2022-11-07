@@ -1,5 +1,7 @@
 {
-	"Main": "Главная",
-	"About": "О сайте",
-	"Language": "ru"
+  "Main": "Главная",
+  "About": "О сайте",
+  "Language": "ru",
+  "toggle": "тогл",
+  "Page error": "страница не найдена"
 }
