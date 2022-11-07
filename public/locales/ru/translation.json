@@ -3,5 +3,7 @@
   "About": "О сайте",
   "Language": "ru",
   "toggle": "тогл",
-  "Page error": "страница не найдена"
+  "Page error": "страница не найдена",
+  "Something went wrong((": "Что-то пошло не так",
+  "Reload": "Перезагрузить страницу"
 }

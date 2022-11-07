@@ -3,5 +3,7 @@
   "About": "About",
   "Language": "English",
   "toggle": "toggle",
-  "Page error": "Page not found"
+  "Page error": "Page not found",
+  "Something went wrong((": "Something went wrong((",
+  "Reload": "Reload page"
 }
