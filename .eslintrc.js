@@ -4,7 +4,14 @@ module.exports = {
     es2021: true
   },
   extends: ['plugin:react/recommended', 'standard-with-typescript', 'prettier'],
-  overrides: [],
+  overrides: [
+    {
+      files: ['**/src/**/*.test.{ts,tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off'
+      }
+    }
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -20,9 +27,15 @@ module.exports = {
     '@typescript-eslint/naming-convention': 0,
     'promise/param-names': 0,
     '@typescript-eslint/no-floating-promises': 0,
-    'i18next/no-literal-string': 2
+    'i18next/no-literal-string': [
+      'error',
+      {
+        markupOnly: true,
+        ignoreAttribute: ['data-testid']
+      }
+    ]
+  },
+  globals: {
+    __IS_DEV: true
   }
-  // global: {
-  //   '__IS_DEV': true,
-  // }
 };
