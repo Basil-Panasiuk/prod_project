@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { Theme, ThemeContext, LOCAL_STORAGE_THEME_KEY } from './ThemeContext';
+import 'app/styles/index.scss';
 
 interface useThemeResult {
   theme: Theme;

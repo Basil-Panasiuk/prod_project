@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Button, ThemeButton } from './Button';
+import { Theme } from 'app/providers/ThemeProvider';
 
 const meta: Meta<typeof Button> = {
   title: 'shared/Button',
   component: Button,
-  tags: ['autodocs'],
   argTypes: {}
 };
 
@@ -31,3 +31,11 @@ export const Outline: Story = {
     theme: ThemeButton.OUTLINE
   }
 };
+
+export const OutlineDark: Story = {
+  args: {
+    children: 'Outlined Dark',
+    theme: ThemeButton.OUTLINE
+  }
+};
+OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
