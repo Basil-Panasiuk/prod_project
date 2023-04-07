@@ -3,15 +3,13 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:react/recommended', 'standard-with-typescript', 'prettier'],
-  overrides: [
-    {
-      files: ['**/src/**/*.test.{ts,tsx}'],
-      rules: {
-        'i18next/no-literal-string': 'off'
-      }
+  extends: ['plugin:react/recommended', 'standard-with-typescript', 'prettier', 'plugin:storybook/recommended'],
+  overrides: [{
+    files: ['**/src/**/*.test.{ts,tsx}'],
+    rules: {
+      'i18next/no-literal-string': 'off'
     }
-  ],
+  }],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -27,13 +25,10 @@ module.exports = {
     '@typescript-eslint/naming-convention': 0,
     'promise/param-names': 0,
     '@typescript-eslint/no-floating-promises': 0,
-    'i18next/no-literal-string': [
-      'error',
-      {
-        markupOnly: true,
-        ignoreAttribute: ['data-testid']
-      }
-    ]
+    'i18next/no-literal-string': ['error', {
+      markupOnly: true,
+      ignoreAttribute: ['data-testid']
+    }]
   },
   globals: {
     __IS_DEV: true
