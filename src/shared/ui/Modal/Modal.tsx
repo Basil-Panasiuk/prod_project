@@ -2,7 +2,7 @@ import React, { FC, ReactNode, useCallback, useEffect, useRef, useState } from '
 import cls from './Modal.module.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Portal } from 'widgets/Portal';
-import { useTheme } from 'app/providers/ThemeProvider';
+// import { useTheme } from 'app/providers/ThemeProvider';
 
 interface ModalProps {
   className?: string;
@@ -16,7 +16,7 @@ const ANIMATION_DELAY = 300;
 export const Modal: FC<ModalProps> = (props) => {
   const { className, children, isOpen, onClose } = props;
   const timerRef = useRef<ReturnType<typeof setTimeout>>();
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
 
   const [isClosing, setIsClosing] = useState(false);
   const closeHandler = useCallback((): void => {
@@ -34,8 +34,7 @@ export const Modal: FC<ModalProps> = (props) => {
   };
 
   const mods: Record<string, boolean> = {
-    [cls.opened]: isOpen,
-    [cls[theme]]: true
+    [cls.opened]: isOpen
   };
 
   const onKeyDown = useCallback(
