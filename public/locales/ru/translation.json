@@ -6,5 +6,7 @@
   "Page error": "страница не найдена",
   "Something went wrong((": "Что-то пошло не так",
   "Reload": "Перезагрузить страницу",
-  "lang": "Ru"
+  "lang": "Ru",
+  "increment": "increment",
+  "decrement": "decrement"
 }
